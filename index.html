@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Notification Pop Up</h1>
+        <div class="nav-right">
+            <p>Only show unread</p>
+            <div class="nav-toggle">
+                <div class='toggle' id='switch'>
+                    <div class='toggle-text-off'>OFF</div>
+                    <div class='glow-comp'></div>
+                    <div class='toggle-button'></div>
+                    <div class='toggle-text-on'>ON</div>
+                </div>
+            </div>
+            <a href="#" class="fa fa-close"></a>
+        </div>
+    </header> 
+
+    <nav>
+        <ul>
+            <li><a href="#">All <button>10</button></a></li>
+            <li><a href="#" class="gray">Community <button>8</button></a></li>
+            <li><a href="#" class="gray">Tag <button>2</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="kene">
+        <img src="images/notification_03.png">
+        <span>Allen Kene</span> replied to your comment on Bioformatic Gurus group <img src="images/Ellipse 1116.png" alt="">
+        <p>That sounds perfect. I'm eager to dive in and learn more. <br> Thanks for the warm welcome and for getting me involved <br>in the project. Looking forward to collaborating with you an..</p>
+    </div>
+    <div class="time">
+        <ul>
+            <li>09:55am</li>
+            <li>05/05/2024</li>
+        </ul>
+    </div>
+
+    <div class="kene">
+        <img src="images/notification_02.png">
+        <span>Sommy I..</span>just released a Blog connected to your MCB 205 tag. <img src="images/Ellipse 1116.png" alt="">
+       
+    </div>
+    <div class="virology">
+        <img src="images/Frame 189.png" alt="">
+    </div>
+    <div class="time">
+
+        <ul>
+            <li>08:35am</li>
+            <li>05/05/2024</li>
+        </ul>
+    </div>
+    <div class="kene">
+        <img src="images/notification_01.png">
+        <span>Dave. Mc..</span>Uploaded a file in the Ecology Group 
+       
+    </div>
+    <div class="virology">
+        <img src="images/Frame 171.png" alt="">
+    </div>
+    <div class="time">
+
+        <ul>
+            <li>09:45am</li>
+            <li>05/05/2024</li>
+        </ul>
+    </div>
+    <div id="skip">
+    <div class="kene">
+        <a href="#" class="fa fa-check-double">Mark all as read</a>
+        <button>View all notifications</button>
+    </div>
+    </div>
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#switch').click(function(e) {
+            e.preventDefault(); // Prevent default behavior to avoid flickering on some platforms
+            $(this).toggleClass('toggle-on');
+        });
+    </script>
+</body>
+</html>
